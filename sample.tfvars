@@ -64,5 +64,5 @@ VPC_PRIVATE_SUBNET2_CIDR_BLOCK = "10.0.4.0/24"
 #----------------------
 # Cloudwatch alerm
 
-# CLOUD_WATCH_ALERM_ACTION_SNS = "arn:aws:sns:ap-northeast-1:053144623357:terraform-test:e69a3e9f-c53a-4926-8a65-2eb23ba7abe0"
+# CLOUD_WATCH_ALERM_ACTION_SNS = ""
 
