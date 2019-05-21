@@ -1,0 +1,9 @@
+terraform.pem
+terraform.tfstate
+terraform.tfvars
+terraform.tfstate.backup
+.terraform/terraform.tfstate
+.terraform/plugins/darwin_amd64/lock.json
+.terraform/plugins/darwin_amd64/terraform-provider-aws_v2.10.0_x4
+.terraform/plugins/windows_amd64/lock.json
+.terraform/plugins/windows_amd64/terraform-provider-aws_v2.10.0_x4.exe
