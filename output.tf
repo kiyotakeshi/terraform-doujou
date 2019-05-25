@@ -26,15 +26,18 @@ output "rds_prod_endpoint" {
   value = "${aws_db_instance.doujou.endpoint}"
 }
 
-
 terraform {
   backend "s3" {
+    # bucket = "doujou-terraform-kiyota"
+    # bucket = "${var.AWS_S3_TFSTATE_BUCKET_NAME}"
+
+    # firstly, you have to create original name bucket in S3
+    # secondly, you fill that bucket name in
     bucket = "doujou-terraform"
-    key    = "main/terraform.tfstate"
+    key    = "terraform.tfstate.aws"
     region = "ap-northeast-1"
   }
 }
-
 
 # 外部から参照する場合
 # subnet_id = "${data.terraform_remote_state.data.public_subnet_id}"

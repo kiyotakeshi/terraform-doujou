@@ -1,68 +1,70 @@
-#----------------------
-# Project wide variable
-PROJECT_NAME = "doujou"
+# #----------------------
+# # Project wide variable
+# PROJECT_NAME = "doujou"
 
-# PLATFORM = "UNIX"
-# PLATFORM = "WIN"
+# # PLATFORM = "UNIX"
+# # PLATFORM = "WIN"
 
-#----------------------
-# Varibles for the Providers
-AWS_ACCESS_KEY = ""
+# AWS_S3_TFSTATE_BUCKET_NAME = ""
 
-AWS_SECRET_KEY = ""
+# #----------------------
+# # Varibles for the Providers
+# AWS_ACCESS_KEY = ""
 
-AWS_REGION = "ap-northeast-1"
+# AWS_SECRET_KEY = ""
 
-#----------------------
-# RDS variable
+# AWS_REGION = "ap-northeast-1"
 
-# DB_INSTANCE_CLASS = "db.m5.large" time is money
-# db.t3.small
-DB_INSTANCE_CLASS = "db.t3.small"
+# #----------------------
+# # RDS variable
 
-RDS_ENGINE = "mysql"
+# # DB_INSTANCE_CLASS = "db.m5.large" time is money
+# # db.t3.small
+# DB_INSTANCE_CLASS = "db.t3.small"
 
-ENGINE_VERSION = "5.7.17"
+# RDS_ENGINE = "mysql"
 
-BACKUP_RETENTION_PERIOD = "7"
+# ENGINE_VERSION = "5.7.17"
 
-PUBLICLY_ACCESSIBLE = "true"
+# BACKUP_RETENTION_PERIOD = "7"
 
-RDS_USERNAME = "test"
+# PUBLICLY_ACCESSIBLE = "true"
 
-RDS_PASSWORD = ""
+# RDS_USERNAME = "test"
 
-RDS_ALLOCATED_STORAGE = "20"
+# RDS_PASSWORD = ""
 
-#----------------------
-# Ec2 Variables
-SSH_CIDR_WEB_SERVER = "0.0.0.0/0"
+# RDS_ALLOCATED_STORAGE = "20"
 
-WEB_SERVER_INSTANCE_TYPE = "t2.micro"
+# #----------------------
+# # Ec2 Variables
+# SSH_CIDR_WEB_SERVER = "0.0.0.0/0"
 
-# windows 以外ならこれを使う
-# USER_DATA_FOR_WEBSERVER = "./demo_code/web.sh"
+# WEB_SERVER_INSTANCE_TYPE = "t2.micro"
 
-PEM_FILE_WEBSERVERS = "YourKeyName"
+# # windows 以外ならこれを使う
+# # USER_DATA_FOR_WEBSERVER = "./demo_code/web.sh"
 
-UNIX_PATH = "./demo_code/web.sh"
-# WIN_PATH = ".¥demo_code¥web.sh"
-# WIN_PATH = ".\demo_code\web.sh"
+# PEM_FILE_WEBSERVERS = "YourKeyName"
 
-#----------------------
-# VPC Variables
-VPC_CIDR_BLOCK = "10.0.0.0/16"
+# UNIX_PATH = "./demo_code/web.sh"
+# # WIN_PATH = ".¥demo_code¥web.sh"
+# # WIN_PATH = ".\demo_code\web.sh"
 
-VPC_PUBLIC_SUBNET1_CIDR_BLOCK = "10.0.1.0/24"
+# #----------------------
+# # VPC Variables
+# VPC_CIDR_BLOCK = "10.0.0.0/16"
 
-VPC_PUBLIC_SUBNET2_CIDR_BLOCK = "10.0.2.0/24"
+# VPC_PUBLIC_SUBNET1_CIDR_BLOCK = "10.0.1.0/24"
 
-VPC_PRIVATE_SUBNET1_CIDR_BLOCK = "10.0.3.0/24"
+# VPC_PUBLIC_SUBNET2_CIDR_BLOCK = "10.0.2.0/24"
 
-VPC_PRIVATE_SUBNET2_CIDR_BLOCK = "10.0.4.0/24"
+# VPC_PRIVATE_SUBNET1_CIDR_BLOCK = "10.0.3.0/24"
 
-#----------------------
-# Cloudwatch alerm
+# VPC_PRIVATE_SUBNET2_CIDR_BLOCK = "10.0.4.0/24"
 
-# CLOUD_WATCH_ALERM_ACTION_SNS = ""
+# #----------------------
+# # Cloudwatch alerm
+
+# # CLOUD_WATCH_ALERM_ACTION_SNS = ""
 
